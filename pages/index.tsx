@@ -1,8 +1,12 @@
+import dynamic from 'next/dynamic'
 
-export default ()=>{
+const SiteHeader = dynamic(()=>import('../components/header').then(mod=>mod.header))
+
+export default function homepage(){
     return (
         <div>
-            <h1>Not Done Yet</h1>
+            <SiteHeader/>
+            <h1 className="text-indigo-700">Not Done Yet</h1>
         </div>
     )
 }
