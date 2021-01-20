@@ -3,28 +3,41 @@ import Head from 'next/head'
 export function header(){
     return (
         <Head>
-            <header className="border-b-2 px-16 bg-white flex flex-wrap items-center py-2 bg-gray-100">
-                <div className="flex-1 flex justify-between items-center">
-                    <a className="text-3xl font-bold" href="#">
-                        ksvls
-                    </a>
-                </div>
-                <div className="hidden md:flex md:items-center md:w-auto" id="menu">
-                    <nav>
-                        <ul className="flex items-center justify-between text-base text-gray-700 pt-0">
-                            <li><a className="p-4 block border-b-2 border-transparent hover:border-indigo-400" href="#">Articles</a></li>
-                            <li><a className="p-4 block border-b-2 border-transparent hover:border-indigo-400" href="#">Subject Matter</a></li>
-                            <li><a className="p-4 block border-b-2 border-transparent hover:border-indigo-400" href="#">API Documentation</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div className="md:hidden lg:hidden flex items-center w-auto" id="menu-minimal">
-                    <div className="flex items-center justify-between text-base text-gray-700 pt-0">
-                        <a href="#" className="p-4 block border-b-2 border-transparent hover:border-indigo-400">Articles</a>
-                        <a href="#" className="p-4 block border-b-2 border-transparent hover:border-indigo-400">Subject Matter</a>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css" integrity="sha256-x8PYmLKD83R9T/sYmJn1j3is/chhJdySyhet/JuHnfY=" crossOrigin="anonymous" />
+            <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap" rel="stylesheet"/>
+
+            <nav className="flex items-center bg-white p-3 flex-wrap border-b-2 bg-gray-100">
+                <a href="#" className="p-2 mr-4 inline-flex items-center">
+                    <span className="text-xl text-black font-bold tracking-wide">ksvls</span>
+                </a>
+                <button className="text-black inline-flex p-3 hover:bg-indigo-400 rounded lg:hidden ml-auto hover:text-white outline-none nav-toggler" data-target="#navigation">
+                    <i className="material-icons">menu</i>
+                </button>
+                <div className="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto" id="navigation">
+                    <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto">
+                        <a href="#" className="lg:inline-flex lg:w-auto w-full px-3 py-2 border-b-2 border-transparent text-gray-700 items-center justify-center hover:border-indigo-400">
+                            <span>Home</span>
+                        </a>
+                        <a href="#" className="lg:inline-flex lg:w-auto w-full px-3 py-2 border-b-2 border-transparent text-gray-700 items-center justify-center hover:border-indigo-400">
+                            <span>About</span>
+                        </a>
+                        <a href="#" className="lg:inline-flex lg:w-auto w-full px-3 py-2 border-b-2 border-transparent text-gray-700 items-center justify-center hover:border-indigo-400" >
+                            <span>Services</span>
+                        </a>
+                        <a href="#" className="lg:inline-flex lg:w-auto w-full px-3 py-2 border-b-2 border-transparent text-gray-700 items-center justify-center hover:border-indigo-400">
+                            <span>Gallery</span>
+                        </a>
+                        <a href="#" className="lg:inline-flex lg:w-auto w-full px-3 py-2 border-b-2 border-transparent text-gray-700 items-center justify-center hover:border-indigo-400">
+                            <span>Products</span>
+                        </a>
+                        <a href="#" className="lg:inline-flex lg:w-auto w-full px-3 py-2 border-b-2 border-transparent text-gray-700 items-center justify-center hover:border-indigo-400">
+                            <span>Contact Us</span>
+                        </a>
                     </div>
                 </div>
-            </header>
+            </nav>
+            <script src="js/libs/jquery/3.5.0/jquery.min.js" crossOrigin="anonymous"></script>
+            <script src="js/libs/navman.js"/>
         </Head>
     )
 }
