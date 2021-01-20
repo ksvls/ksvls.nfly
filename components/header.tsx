@@ -22,16 +22,10 @@ export function header(){
                             <span>About</span>
                         </a>
                         <a href="#" className="lg:inline-flex lg:w-auto w-full px-3 py-2 border-b-2 border-transparent text-gray-700 items-center justify-center hover:border-indigo-400" >
-                            <span>Services</span>
+                            <span>Subject Matter</span>
                         </a>
                         <a href="#" className="lg:inline-flex lg:w-auto w-full px-3 py-2 border-b-2 border-transparent text-gray-700 items-center justify-center hover:border-indigo-400">
-                            <span>Gallery</span>
-                        </a>
-                        <a href="#" className="lg:inline-flex lg:w-auto w-full px-3 py-2 border-b-2 border-transparent text-gray-700 items-center justify-center hover:border-indigo-400">
-                            <span>Products</span>
-                        </a>
-                        <a href="#" className="lg:inline-flex lg:w-auto w-full px-3 py-2 border-b-2 border-transparent text-gray-700 items-center justify-center hover:border-indigo-400">
-                            <span>Contact Us</span>
+                            <span>API Documentation</span>
                         </a>
                     </div>
                 </div>
