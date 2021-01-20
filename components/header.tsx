@@ -3,7 +3,7 @@ import Head from 'next/head'
 export function header(){
     return (
         <Head>
-            <header className="px-16 bg-white flex flex-wrap items-center py-2 bg-gray-100">
+            <header className="border-b-2 px-16 bg-white flex flex-wrap items-center py-2 bg-gray-100">
                 <div className="flex-1 flex justify-between items-center">
                     <a className="text-3xl font-bold" href="#">
                         ksvls
